@@ -18,7 +18,8 @@ class Settings:
     
     # Gemini LLM Settings
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "").strip()
-    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+    GEMINI_FALLBACK_MODELS: list = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.8-flash"]
     GEMINI_TEMPERATURE: float = float(os.getenv("GEMINI_TEMPERATURE", "0.2"))
     
     # Embedding Configuration
@@ -38,6 +39,7 @@ class Settings:
     # Retrieval Configuration
     TOP_K_RETRIEVAL: int = 4
     SIMILARITY_THRESHOLD: float = 0.35
+    MAX_DISTANCE_THRESHOLD: float = float(os.getenv("MAX_DISTANCE_THRESHOLD", "1.30"))
     
     # Languages Supported
     SUPPORTED_LANGUAGES = {

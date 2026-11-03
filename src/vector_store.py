@@ -89,11 +89,13 @@ class VectorStore:
         self,
         query: str,
         k: int = 4,
-        category: Optional[str] = None
+        category: Optional[str] = None,
+        max_distance: Optional[float] = None
     ) -> List[Dict[str, Any]]:
         """
         Perform semantic similarity retrieval on vector store.
         If category is specified and not 'All Services', applies metadata filtering.
+        Filters out irrelevant matches exceeding max_distance threshold.
         """
         where_clause = None
         if category and category != "All Services":
@@ -128,7 +130,12 @@ class VectorStore:
         distances = results["distances"][0] if results.get("distances") else [0.0] * len(docs)
         ids = results["ids"][0] if results.get("ids") else [""] * len(docs)
 
+        cutoff = max_distance if max_distance is not None else getattr(settings, "MAX_DISTANCE_THRESHOLD", 1.30)
+
         for text, meta, dist, cid in zip(docs, metadatas, distances, ids):
+            if dist is not None and dist > cutoff:
+                logger.info(f"Filtered out chunk '{meta.get('source_title')}' due to distance {dist:.3f} > {cutoff}")
+                continue
             retrieved_docs.append({
                 "text": text,
                 "metadata": meta,

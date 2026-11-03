@@ -178,19 +178,30 @@ class RAGPipeline:
                     language=language
                 )
                 if self._genai_client:
-                    clean_model = self.model_name.replace("models/", "")
-                    response = self._genai_client.models.generate_content(
-                        model=clean_model,
-                        contents=prompt
-                    )
+                    # Try primary model and fallbacks if demand spikes occur
+                    models_to_try = [self.model_name] + [m for m in getattr(settings, "GEMINI_FALLBACK_MODELS", []) if m != self.model_name]
+                    for candidate in models_to_try:
+                        try:
+                            clean_model = candidate.replace("models/", "")
+                            response = self._genai_client.models.generate_content(
+                                model=clean_model,
+                                contents=prompt
+                            )
+                            if response and hasattr(response, 'text') and response.text:
+                                answer = response.text.strip()
+                                is_live_gemini = True
+                                break
+                        except Exception as cand_err:
+                            logger.warning(f"Candidate model '{candidate}' failed ({cand_err}); attempting fallback.")
                 else:
                     response = self._legacy_client.generate_content(prompt)
+                    if response and hasattr(response, 'text') and response.text:
+                        answer = response.text.strip()
+                        is_live_gemini = True
 
-                if response and hasattr(response, 'text') and response.text:
-                    answer = response.text.strip()
-                    is_live_gemini = True
-                else:
-                    logger.warning("Empty response received from Gemini API.")
+                if not answer:
+                    logger.warning("Empty response received from Gemini API; synthesizing locally.")
+                    answer = self._synthesize_local_response(query, retrieved_docs, language)
             except Exception as e:
                 logger.error(f"Gemini API error during generation: {e}")
                 # Fallback to local synthesis
