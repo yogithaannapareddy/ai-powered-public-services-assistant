@@ -119,7 +119,17 @@ with st.sidebar:
 
     st.divider()
 
-    # 3. Knowledge Base Status & Re-index
+    # 3. Voice Interaction Toggle
+    st.subheader("🔊 Audio & Voice")
+    enable_voice_audio = st.toggle(
+        "Voice Output (TTS)",
+        value=False,
+        help="Synthesize and play spoken audio for assistant answers in selected language."
+    )
+
+    st.divider()
+
+    # 4. Knowledge Base Status & Re-index
     st.subheader("📊 Knowledge Base")
     total_chunks = vs.count()
     st.markdown(f"Indexed Chunks: **{total_chunks}**")
@@ -343,11 +353,12 @@ if user_query:
 
             # Generate voice audio if enabled
             audio_bytes = None
-            if settings.ENABLE_VOICE:
+            if enable_voice_audio and settings.ENABLE_VOICE:
                 try:
-                    audio_bytes = generate_speech_audio(answer_text, language=lang)
-                    if audio_bytes:
-                        st.audio(audio_bytes, format="audio/mp3")
+                    with st.spinner("Generating voice audio..."):
+                        audio_bytes = generate_speech_audio(answer_text, language=lang)
+                        if audio_bytes:
+                            st.audio(audio_bytes, format="audio/mp3")
                 except Exception as e:
                     logger.warning(f"Voice playback skipped: {e}")
 

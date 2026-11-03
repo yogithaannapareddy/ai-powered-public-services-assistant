@@ -102,3 +102,4 @@ class Settings:
     ENABLE_VOICE: bool = os.getenv("ENABLE_VOICE", "True").lower() in ("true", "1", "yes")
 
 settings = Settings()
+

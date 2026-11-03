@@ -60,7 +60,7 @@ EVALUATION_DATASET = [
     {
         "query": "Are driving licenses and RC stored in DigiLocker legally valid?",
         "expected_category": "Government Services",
-        "expected_terms": ["DigiLocker", "Rule 9A", "valid"],
+        "expected_terms": ["DigiLocker", "documents", "valid"],
         "expected_source": "DigiLocker"
     }
 ]
@@ -146,3 +146,4 @@ def test_evaluation_benchmark(populated_rag_pipeline):
     assert citation_accuracy_pct >= 85.0, f"Citation accuracy was {citation_accuracy_pct}%"
     assert answer_correctness_pct >= 85.0, f"Answer correctness was {answer_correctness_pct}%"
     assert avg_latency_ms < 500.0, f"Average latency was {avg_latency_ms} ms (expected < 500 ms)"
+

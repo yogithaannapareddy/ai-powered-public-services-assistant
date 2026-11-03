@@ -77,3 +77,4 @@ def test_load_text_file():
     assert len(chunks) >= 1
     assert chunks[0].metadata["category"] == "Banking Services"
     assert any("KYC" in c.text for c in chunks)
+

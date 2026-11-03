@@ -36,3 +36,4 @@ SECTION 2: DIGILOCKER DIGITAL WALLET PLATFORM
 - Step 3: Click 'Search Documents' and search for your institution (e.g., State Board, CBSE, UIDAI, MoRTH).
 - Step 4: Enter specific identifier (Registration number, Roll number, or Chassis/Vehicle number).
 - Step 5: DigiLocker fetches the cryptographically signed electronic certificate and saves it in 'Issued Documents' section.
+

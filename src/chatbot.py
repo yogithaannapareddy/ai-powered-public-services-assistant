@@ -59,3 +59,4 @@ class Chatbot:
     def get_history(self) -> List[Dict[str, str]]:
         """Return the current conversation history."""
         return self.conversation_history
+

@@ -8,7 +8,7 @@ import time
 from typing import List, Dict, Any, Optional, Tuple
 
 from config.settings import settings
-from src.utils import logger, detect_service_category
+from src.utils import logger, detect_service_category, is_valid_api_key
 from src.vector_store import VectorStore
 from src.prompts import create_rag_prompt
 from src.source_citations import SourceCitation, deduplicate_citations
@@ -16,11 +16,12 @@ from src.source_citations import SourceCitation, deduplicate_citations
 class RAGPipeline:
     """End-to-end RAG orchestrator for citizen service inquiries."""
 
-    def __init__(self, vector_store: Optional[VectorStore] = None, api_key: str = ""):
-        self.api_key = api_key or settings.GEMINI_API_KEY
+    def __init__(self, vector_store: Optional[VectorStore] = None, api_key: Optional[str] = None):
+        self.api_key = api_key if api_key is not None else settings.GEMINI_API_KEY
         self.vector_store = vector_store or VectorStore(api_key=self.api_key)
         self.model_name = settings.GEMINI_MODEL
-        self._gemini_client = None
+        self._genai_client = None
+        self._legacy_client = None
         self._init_llm()
 
     def update_api_key(self, api_key: str):
@@ -29,28 +30,34 @@ class RAGPipeline:
         self._init_llm()
 
     def _init_llm(self):
-        """Initialize Google Gemini client."""
-        if not self.api_key:
-            logger.info("RAGPipeline running without Gemini API key (knowledge base direct synthesis mode).")
-            self._gemini_client = None
+        """Initialize Google Gemini client using modern google.genai or legacy fallback."""
+        if not is_valid_api_key(self.api_key):
+            logger.info("RAGPipeline running in local knowledge-base direct mode (no valid API key).")
+            self._genai_client = None
+            self._legacy_client = None
             return
 
         try:
-            import google.generativeai as genai
-            genai.configure(api_key=self.api_key)
-            self._gemini_client = genai.GenerativeModel(
-                model_name=self.model_name,
-                generation_config={
-                    "temperature": settings.GEMINI_TEMPERATURE,
-                    "top_p": 0.95,
-                    "top_k": 40,
-                    "max_output_tokens": 1024,
-                }
-            )
-            logger.info(f"Initialized Gemini LLM model: {self.model_name}")
+            from google import genai
+            self._genai_client = genai.Client(api_key=self.api_key)
+            logger.info(f"Initialized modern google.genai Client for model: {self.model_name}")
         except Exception as e:
-            logger.error(f"Error configuring Gemini client: {e}")
-            self._gemini_client = None
+            logger.warning(f"Failed modern google.genai initialization, trying legacy: {e}")
+            try:
+                import google.generativeai as legacy_genai
+                legacy_genai.configure(api_key=self.api_key)
+                self._legacy_client = legacy_genai.GenerativeModel(
+                    model_name=self.model_name,
+                    generation_config={
+                        "temperature": settings.GEMINI_TEMPERATURE,
+                        "top_p": 0.95,
+                        "top_k": 40,
+                        "max_output_tokens": 1024,
+                    }
+                )
+                logger.info(f"Initialized legacy Gemini LLM model: {self.model_name}")
+            except Exception as e2:
+                logger.error(f"Error configuring Gemini client: {e2}")
 
     def retrieve(
         self,
@@ -121,15 +128,21 @@ class RAGPipeline:
         meta = top_doc.get("metadata", {})
         title = meta.get("source_title", "Official Public Document")
 
+        # Parse FAQ format if present
+        clean_body = text
+        if "Answer:" in text:
+            parts = text.split("Answer:", 1)
+            clean_body = parts[1].strip()
+
         # Format cleanly
         if language == "Hindi":
-            header = f"**आधिकारिक संदर्भ ({title}):**\n\n"
+            header = f"**आधिकारिक जानकारी ({title}):**\n\n"
         elif language == "Telugu":
             header = f"**అధికారిక సమాచారం ({title}):**\n\n"
         else:
             header = f"**Official Information ({title}):**\n\n"
 
-        return f"{header}{text}"
+        return f"{header}{clean_body}"
 
     def generate(
         self,
@@ -156,7 +169,7 @@ class RAGPipeline:
         answer = ""
         is_live_gemini = False
 
-        if self._gemini_client and self.api_key:
+        if (self._genai_client or self._legacy_client) and self.api_key:
             try:
                 prompt = create_rag_prompt(
                     user_query=query,
@@ -164,7 +177,15 @@ class RAGPipeline:
                     chat_history=chat_history,
                     language=language
                 )
-                response = self._gemini_client.generate_content(prompt)
+                if self._genai_client:
+                    clean_model = self.model_name.replace("models/", "")
+                    response = self._genai_client.models.generate_content(
+                        model=clean_model,
+                        contents=prompt
+                    )
+                else:
+                    response = self._legacy_client.generate_content(prompt)
+
                 if response and hasattr(response, 'text') and response.text:
                     answer = response.text.strip()
                     is_live_gemini = True
@@ -187,3 +208,4 @@ class RAGPipeline:
             "is_live_gemini": is_live_gemini,
             "detected_category": category if category != "All Services" else detect_service_category(query)
         }
+

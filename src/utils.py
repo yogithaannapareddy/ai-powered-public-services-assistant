@@ -10,6 +10,23 @@ logging.basicConfig(
 )
 logger = logging.getLogger("public_services_assistant")
 
+def is_valid_api_key(key: Optional[str]) -> bool:
+    """Validate whether an API key is a genuine key rather than empty or placeholder."""
+    if not key:
+        return False
+    k = key.strip()
+    placeholder_keys = {
+        "your_gemini_api_key_here",
+        "your_api_key_here",
+        "your_key_here",
+        "placeholder",
+        "none",
+        ""
+    }
+    if k.lower() in placeholder_keys:
+        return False
+    return len(k) >= 12
+
 def clean_text(text: str) -> str:
     """Normalize whitespace and strip unprintable characters."""
     if not text:
@@ -49,40 +66,44 @@ def detect_service_category(query: str) -> Optional[str]:
     """Detect probable public service category from user query keywords."""
     query_lower = query.lower()
     
-    # Post office keywords
+    # Post office keywords (English, Hindi, Telugu)
     po_keywords = [
         "speed post", "parcel", "post office", "postal", "pincode", "pin code",
         "postman", "dak", "ippb", "savings certificate", "posa", "sukanya samriddhi",
-        "national savings certificate", "postage", "consignment"
+        "national savings certificate", "postage", "consignment",
+        "पार्सल", "स्पीड पोस्ट", "डाक", "डाकघर", "పార్శిల్‌", "స్పీడ్ పోస్ట్", "తపాలా", "పోస్టాఫీస్", "పోస్ట్"
     ]
     if any(kw in query_lower for kw in po_keywords):
         return "Post Office Services"
         
-    # Banking keywords
+    # Banking keywords (English, Hindi, Telugu)
     bank_keywords = [
         "bank", "account opening", "kyc", "debit card", "atm", "upi", "pin",
         "cheque", "loan", "interest rate", "passbook", "rbi", "ombudsman",
         "fixed deposit", "savings account", "bsbda", "jan dhan", "cyber fraud",
-        "net banking", "mobile banking"
+        "net banking", "mobile banking",
+        "बैंक", "खाता", "केवाईसी", "पिन", "లోన్", "ఖాతా", "బ్యాంక్"
     ]
     if any(kw in query_lower for kw in bank_keywords):
         return "Banking Services"
         
-    # Transportation keywords
+    # Transportation keywords (English, Hindi, Telugu)
     trans_keywords = [
         "train", "irctc", "railway", "tatkal", "bus pass", "bus", "metro",
         "ncmc", "pnr", "ticket", "reservation", "sleeper", "coach", "depot",
-        "smart card", "tsrtc", "apsrtc", "dtc", "bmtc", "msrtc"
+        "smart card", "tsrtc", "apsrtc", "dtc", "bmtc", "msrtc",
+        "ट्रेन", "रेलवे", "तत्काल", "बस पास", "मेट्रो", "రైలు", "తత్కాల్", "బస్సు పాస్", "మెట్రో"
     ]
     if any(kw in query_lower for kw in trans_keywords):
         return "Public Transportation"
         
-    # Government services keywords
+    # Government services keywords (English, Hindi, Telugu)
     gov_keywords = [
         "certificate", "income certificate", "caste certificate", "domicile",
         "residence certificate", "digilocker", "birth certificate", "death certificate",
         "ration card", "aadhaar", "pan card", "serviceplus", "meeseva", "edistrict",
-        "tahsildar", "sdm", "government scheme", "scholarship", "portal"
+        "tahsildar", "sdm", "government scheme", "scholarship", "portal",
+        "प्रमाण पत्र", "आय प्रमाण पत्र", "जाति प्रमाण पत्र", "डिजिलॉकर", "जन्म प्रमाण", "ధృవీకరణ", "సర్టిఫికెట్", "డిజిలాకర్", "ఆదాయ"
     ]
     if any(kw in query_lower for kw in gov_keywords):
         return "Government Services"

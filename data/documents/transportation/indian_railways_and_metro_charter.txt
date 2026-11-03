@@ -40,3 +40,4 @@ SECTION 2: METRO RAIL & NATIONAL COMMON MOBILITY CARD (NCMC)
 - Documentation: Requires bonafide certificate from educational institution, recent stamp size photographs, fee receipt, and residential proof.
 - Senior Citizen Concession: 50% discount on fare in regular state corporation buses for citizens aged 60 and above with valid age proof.
 - Digital Ticketing: Commuters can generate digital QR bus passes and tickets via official state transport corporation mobile apps or WhatsApp booking numbers.
+

@@ -41,3 +41,4 @@ SECTION 3: INDIA POST PAYMENTS BANK (IPPB)
 - Minimum Balance: Zero balance account without penalty.
 - Services Offered: Domestic money transfers, utility bill payments, DBT subsidy receipt, life and health insurance distribution, and Post Office Savings scheme deposits.
 - Customer Helpline: 155299 (Toll-Free).
+

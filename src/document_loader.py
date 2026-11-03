@@ -250,3 +250,4 @@ class DocumentLoader:
 
         logger.info(f"Total knowledge base chunks created: {len(all_chunks)}")
         return all_chunks
+

@@ -120,3 +120,4 @@ def test_rag_pipeline_generation(setup_test_vector_store):
     assert len(res["citations"]) >= 1
     assert res["citations"][0].source_title == "IRCTC Tatkal Booking Rules"
     assert res["latency_ms"] >= 0
+

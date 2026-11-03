@@ -68,3 +68,4 @@ def test_create_rag_prompt_structure():
     assert "Page 2" in prompt
     assert user_query in prompt
     assert "NEVER ask the citizen for passwords, OTPs" in prompt
+

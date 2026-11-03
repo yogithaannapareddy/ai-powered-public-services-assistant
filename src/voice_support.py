@@ -42,3 +42,4 @@ def generate_speech_audio(text: str, language: str = "English") -> Optional[byte
     except Exception as e:
         logger.warning(f"Voice generation failed: {e}")
         return None
+

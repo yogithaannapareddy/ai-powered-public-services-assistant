@@ -126,3 +126,4 @@ if __name__ == "__main__":
         ])
     ]
     create_pdf("data/documents/government/Citizen_Certificates_and_DigiLocker_Manual.pdf", "Government Citizen Certificates & DigiLocker Handbook", gov_sections)
+

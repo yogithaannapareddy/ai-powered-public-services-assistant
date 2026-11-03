@@ -105,3 +105,4 @@ def create_rag_prompt(
         chat_history=history_str,
         user_query=user_query
     )
+

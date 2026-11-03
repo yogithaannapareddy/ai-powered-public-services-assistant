@@ -211,3 +211,4 @@ def get_example_questions(category: str, language: str = "English") -> list:
         if qs:
             all_examples.append(qs[0])
     return all_examples
+

@@ -105,6 +105,13 @@ class VectorStore:
                 n_results=k,
                 where=where_clause
             )
+            # If filtered search yielded 0 documents, fall back to global search
+            if where_clause and (not results or not results.get("documents") or not results["documents"][0]):
+                logger.info("Category-filtered search yielded 0 documents; falling back to global search.")
+                results = self.collection.query(
+                    query_texts=[query],
+                    n_results=k
+                )
         except Exception as e:
             logger.warning(f"Chroma filtered search failed ({e}), falling back to unfiltered search.")
             results = self.collection.query(
@@ -146,3 +153,4 @@ class VectorStore:
             logger.info(f"Reset Chroma collection '{self.collection_name}'")
         except Exception as e:
             logger.error(f"Error resetting collection: {e}")
+

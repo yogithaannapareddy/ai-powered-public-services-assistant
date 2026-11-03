@@ -108,3 +108,4 @@ def chat_endpoint(request: ChatRequest):
         is_live_gemini=result.get("is_live_gemini", False),
         detected_category=result.get("detected_category")
     )
+

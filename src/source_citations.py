@@ -57,3 +57,4 @@ def format_citations_markdown(citations: List[SourceCitation]) -> str:
             lines.append(f"   > *\"{clean_snippet}\"*")
             
     return "\n".join(lines)
+
