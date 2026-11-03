@@ -1,0 +1,131 @@
+/* ================================================================
+   AI-Powered Public Services Assistant - Custom Stylesheet
+   Color Palette: Deep Blue (#0D47A1, #1565C0), Slate (#263238), Soft Blue-Gray (#F4F7FB)
+   ================================================================ */
+
+/* Main Container Padding & Typography */
+.main .block-container {
+    padding-top: 1.8rem;
+    padding-bottom: 3rem;
+    max-width: 1050px;
+}
+
+/* Accessibility & Typography */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: #1A202C;
+}
+
+/* Header Banner */
+.assistant-header {
+    background: linear-gradient(135deg, #0D47A1 0%, #1976D2 50%, #0288D1 100%);
+    color: white;
+    padding: 24px 28px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(13, 71, 161, 0.15);
+}
+
+.assistant-header h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF !important;
+    letter-spacing: -0.5px;
+}
+
+.assistant-header p {
+    font-size: 1.05rem;
+    color: #E3F2FD !important;
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/* Category Card Styling */
+.category-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-top: 4px solid #1976D2;
+    border-radius: 10px;
+    padding: 16px;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.category-card:hover {
+    border-color: #0D47A1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(13, 71, 161, 0.12);
+}
+
+.category-card h4 {
+    color: #0D47A1;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.category-card p {
+    color: #4A5568;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Source Citation Box */
+.citation-box {
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    border-left: 4px solid #0288D1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
+
+/* Citizen Security Disclaimer */
+.disclaimer-banner {
+    background-color: #FFF9DB;
+    border: 1px solid #FFE066;
+    border-left: 4px solid #FAB005;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #495057;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+/* Stats Metric Pills */
+.stat-pill {
+    display: inline-block;
+    background-color: #E3F2FD;
+    color: #0D47A1;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+/* Chat Message Styling */
+[data-testid="stChatMessage"] {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #EDF2F7;
+    margin-bottom: 10px;
+}
+
+/* Button Customization */
+button[kind="primary"] {
+    background-color: #0D47A1 !important;
+    border-color: #0D47A1 !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+button[kind="secondary"] {
+    border-color: #CBD5E1 !important;
+    color: #1E293B !important;
+}

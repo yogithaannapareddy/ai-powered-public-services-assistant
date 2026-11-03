@@ -1,0 +1,43 @@
+INDIA POST CITIZEN CHARTER & SERVICES MANUAL
+Source: Department of Posts, Ministry of Communications, Government of India
+Official URL: https://www.indiapost.gov.in
+Last Updated: 2024
+
+SECTION 1: SPEED POST AND DOMESTIC PARCEL SERVICES
+1. Speed Post:
+Speed Post is the premium domestic courier service of India Post, offering fast and guaranteed delivery across all pin codes in India.
+- Weight Limit: Up to 35 kilograms.
+- Delivery Standards: Local delivery within 1-2 days; metro-to-metro within 1-3 days; rest of India within 2-5 days depending on location.
+- Tracking: Every Speed Post item receives a unique 13-character tracking number (format: two letters, 9 digits, 'IN', e.g., SP123456789IN).
+- SMS Tracking: Send SMS 'POST TRACK <13-digit Consignment ID>' to 166 or 51969.
+- Compensation: In case of delay, compensation equals the Speed Post fee paid. In case of loss or damage, compensation is double the Speed Post fee or Rs. 1000, whichever is less.
+
+2. Domestic Parcel Booking:
+- Standard Registered Parcel: Ideal for heavier goods up to 20 kg.
+- Packaging Requirements: Parcels must be packed securely in strong boxes, cardboard, or cloth wrap. Liquid, perishable, corrosive, or flammable goods are prohibited.
+- Declaration: Parcels sent for interstate movement with commercial value may require an e-way bill / GST declaration under prevailing tax laws.
+- Address Format: Clearly print the sender's name, complete address, mobile number, and PIN code on the top-left corner. Print the addressee's full name, address, landmark, PIN code, and mobile number in the center.
+
+SECTION 2: POST OFFICE SAVINGS BANK (POSB) ACCOUNTS
+1. Post Office Savings Account (POSA):
+- Eligibility: Resident individual Indian citizens. Can be single, joint (up to 3 adults), or minor operated through guardian (minors aged 10+ can operate individually).
+- Minimum Opening Amount: Rs. 500 in cash or cheque.
+- Minimum Balance Requirement: Rs. 500. If minimum balance is not maintained at financial year end, a maintenance fee is deducted.
+- Interest Rate: 4.0% per annum credited annually.
+- Features: ATM Card facility, Cheque book facility, e-Banking / m-Banking, and Aadhaar seeding for government DBT subsidies.
+- Nomination: Mandatory at the time of opening the account.
+
+2. Senior Citizen Savings Scheme (SCSS):
+- Eligibility: Individuals aged 60 years or above, or retired civilian employees aged 55-60 years with retirement benefits.
+- Maximum Deposit: Rs. 30 Lakhs.
+- Tenure: 5 years (extendable by 3 years).
+- Interest: Paid quarterly directly into the investor's savings account.
+- Tax Benefit: Eligible for Section 80C deduction.
+
+SECTION 3: INDIA POST PAYMENTS BANK (IPPB)
+- Overview: IPPB is a 100% Government of India owned payments bank under the Department of Posts.
+- Doorstep Banking: Postmen and Gramin Dak Sevaks (GDS) visit customers' residences with handheld biometric micro-ATM devices.
+- Account Opening: Paperless, 100% digital account opening in under 5 minutes using Aadhaar and biometric fingerprint/iris scan. No paper copies required.
+- Minimum Balance: Zero balance account without penalty.
+- Services Offered: Domestic money transfers, utility bill payments, DBT subsidy receipt, life and health insurance distribution, and Post Office Savings scheme deposits.
+- Customer Helpline: 155299 (Toll-Free).

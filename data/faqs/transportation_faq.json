@@ -1,0 +1,35 @@
+[
+  {
+    "id": "trans_001",
+    "category": "Public Transportation",
+    "service": "Indian Railways Reservation & Tatkal",
+    "question": "How do I book train tickets online and what is the Tatkal booking procedure on IRCTC?",
+    "answer": "Railway reservation guidelines via IRCTC:\n1. Online Portal: Create an account on www.irctc.co.in or IRCTC Rail Connect mobile app. Ensure mobile and email are verified.\n2. General Booking: Opens 120 days in advance (at 8:00 AM) for regular reserved classes.\n3. Tatkal Booking Timing:\n   - AC Classes (2A, 3A, 3E, CC, EC): Opens at 10:00 AM, one day prior to train departure date from source station.\n   - Non-AC Classes (Sleeper, Second Seating): Opens at 11:00 AM, one day prior.\n4. Tatkal Rules:\n   - Maximum 4 passengers per PNR.\n   - Premium Tatkal has dynamic surge pricing.\n   - No refund on confirmed Tatkal tickets upon cancellation.\n5. Payment: Use UPI, Net Banking, or Debit Card. Fast UPI checkout is recommended for high-demand Tatkal slots.\n6. Travel ID: Carry an original Government Photo ID (Aadhaar, Voter ID, Driving License) during train journey.",
+    "documents_required": ["Original Photo ID proof (Aadhaar, PAN, Voter ID, Driving License, or Passport)"],
+    "source_title": "Indian Railways / IRCTC Passenger Reservation System Charter",
+    "source_url": "https://www.irctc.co.in/nget/train-search",
+    "last_verified": "2024-05-01"
+  },
+  {
+    "id": "trans_002",
+    "category": "Public Transportation",
+    "service": "Bus Pass Application (State Transport)",
+    "question": "How do students and regular commuters apply for a concessional state bus pass?",
+    "answer": "Steps to apply for a State Road Transport bus pass (e.g. TSRTC, APSRTC, DTC, BMTC, MSRTC):\n1. Category: Identify pass type (Student Concessional Pass, Monthly General Commuter Pass, Senior Citizen Concession, or Person with Disability Pass).\n2. Apply Online/Offline: Visit your state transport corporation portal (e.g. online TSRTC / APSRTC bus pass portal, DTC portal) or visit designated bus depot pass counters.\n3. School/College Attestation: For student passes, download application form, get it stamped and signed by the headmaster/principal with admission number and bonafide stamp.\n4. Required Proofs: Attach student ID, Aadhaar card, residence proof, and passport photos.\n5. Fee Payment: Pay nominal administrative and pass fee online or at depot cash counter.\n6. Collection: Collect smart bus pass or laminated pass card from the chosen depot counter or download digital QR pass.",
+    "documents_required": ["Bonafide Certificate / School-College ID", "Aadhaar Card / Residence Proof", "2 Passport Size Photos", "Age proof (for senior citizen concession, 60+ years)"],
+    "source_title": "State Road Transport Corporation Bus Pass Citizen Services",
+    "source_url": "https://www.morth.nic.in",
+    "last_verified": "2024-04-10"
+  },
+  {
+    "id": "trans_003",
+    "category": "Public Transportation",
+    "service": "Metro Card & National Common Mobility Card (NCMC)",
+    "question": "What is the National Common Mobility Card (NCMC) and how do I get a metro card?",
+    "answer": "Metro travel cards and NCMC guidelines:\n1. Metro Smart Card: Available at any metro station customer service counter. Deposit of Rs. 50 (refundable) plus minimum top-up (typically Rs. 100-200). Provides 10% discount on metro trips.\n2. National Common Mobility Card (NCMC): An interoperable RuPay contactless card supported across Delhi Metro, Hyderabad Metro, Mumbai Metro, Bengaluru Metro (Namma Metro), and city buses.\n3. How to obtain NCMC: Apply at partner bank branches (SBI, Canara, Paytm Payments Bank, etc.) or purchase an NCMC smart card directly at metro station ticket counters.\n4. Digital QR Tickets: Passengers can also book paper QR tickets at station kiosks or digital QR tickets instantly via WhatsApp chatbots (e.g. DMRC, L&T Metro Rail Hyderabad) or metro mobile apps without standing in line.",
+    "documents_required": ["Identity Proof (Aadhaar or PAN required only if issuing bank-linked KYC NCMC card; station non-KYC travel cards require no documents)"],
+    "source_title": "Ministry of Housing and Urban Affairs (MoHUA) NCMC Guidelines",
+    "source_url": "https://mohua.gov.in/cms/national-common-mobility-card.php",
+    "last_verified": "2024-03-25"
+  }
+]

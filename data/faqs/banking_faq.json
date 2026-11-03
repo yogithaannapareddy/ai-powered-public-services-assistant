@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bank_001",
+    "category": "Banking Services",
+    "service": "Bank Account Opening & KYC",
+    "question": "What is the procedure and required documents to open a savings bank account in India?",
+    "answer": "To open a basic savings bank account:\n1. Choose Bank & Mode: You can apply online through official bank mobile apps (SBI YONO, HDFC Bank, ICICI Bank, etc.) with Video KYC, or visit the nearest bank branch.\n2. Fill Account Opening Form: Provide personal details, occupation, and nomination information.\n3. KYC Documents: Submit Officially Valid Documents (OVDs) for identity and address proof.\n4. Initial Deposit: Regular savings accounts require a minimum balance (Rs. 1,000 - 3,000 in semi-urban/urban), or Rs. 0 for BSBDA (Basic Savings Bank Deposit Account / Jan Dhan Account).\n5. Verification: Bank verifies documents. For online accounts, Video KYC takes 5 minutes.\n6. Welcome Kit: You receive your account number, customer ID (CIF), passbook, and debit card kit.",
+    "documents_required": ["Aadhaar Card (Identity & Address)", "PAN Card or Form 60", "2 Passport-sized Photographs", "Address proof (Electricity bill/Voter ID) if current address differs from Aadhaar"],
+    "source_title": "Reserve Bank of India (RBI) KYC Master Direction",
+    "source_url": "https://www.rbi.org.in/scripts/BS_ViewMasCirculardetails.aspx?id=12586",
+    "last_verified": "2024-04-01"
+  },
+  {
+    "id": "bank_002",
+    "category": "Banking Services",
+    "service": "ATM & Debit Cards",
+    "question": "How do I activate my new ATM debit card, set a Green PIN, and keep it secure?",
+    "answer": "To activate your new ATM debit card:\n1. Green PIN Generation: Visit your bank's nearest ATM. Insert card, select 'Generate PIN' or 'OTP PIN generation'. Enter account number and registered mobile number.\n2. OTP Verification: You will receive a 6-digit OTP on your registered phone.\n3. PIN Set: Re-insert card, select 'Enter OTP', and set your new secret 4-digit PIN.\n4. Online/Netbanking Method: You can also generate PIN instantly in your bank's mobile app under 'Cards' -> 'Manage Debit Card' -> 'Set PIN'.\n5. Enable E-Commerce/Contactless: As per RBI rules, new cards have online and international transactions disabled by default. Enable domestic POS/e-commerce in mobile banking app.\n6. Safety Rule: Never write down your PIN on the card. Bank officials never ask for your PIN, CVV, or OTP.",
+    "documents_required": ["New Debit Card", "Bank Registered Mobile Phone", "Bank Account Number"],
+    "source_title": "Reserve Bank of India (RBI) Debit and Credit Card Regulatory Framework",
+    "source_url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12300",
+    "last_verified": "2024-03-15"
+  },
+  {
+    "id": "bank_003",
+    "category": "Banking Services",
+    "service": "UPI Usage & Safety",
+    "question": "How does UPI work and what are the critical safety rules to prevent online frauds?",
+    "answer": "Unified Payments Interface (UPI) allows instant money transfer 24/7:\n1. Setting up UPI: Download a trusted app (BHIM, Google Pay, PhonePe, Paytm, or bank app). Select your SIM registered with your bank. Set a 4 or 6-digit UPI PIN using your debit card or Aadhaar.\n2. Sending Money: Scan a QR code or enter recipient's mobile number/UPI ID. Enter amount and approve with your UPI PIN.\n3. CRITICAL SAFETY RULES:\n   - UPI PIN IS ONLY REQUIRED TO SEND MONEY, NEVER TO RECEIVE MONEY. If someone asks for a PIN to send you money or a lottery prize, it is 100% a scam.\n   - Never share OTPs, UPI PINs, or screen-sharing apps (AnyDesk, TeamViewer) with strangers.\n   - Verify recipient name before clicking 'Pay'.\n   - In case of unauthorized transaction, immediately dial National Cyber Crime Helpline '1930' or report on cybercrime.gov.in within 24 hours.",
+    "documents_required": ["Active Bank Account", "Debit Card / Aadhaar for initial PIN setup", "Registered Mobile Number"],
+    "source_title": "National Payments Corporation of India (NPCI) UPI Safety Guidelines",
+    "source_url": "https://www.npci.org.in/what-we-do/upi/faqs",
+    "last_verified": "2024-05-15"
+  },
+  {
+    "id": "bank_004",
+    "category": "Banking Services",
+    "service": "Banking Complaints & Ombudsman",
+    "question": "How do I file a complaint against a bank if my issue is not resolved by the branch?",
+    "answer": "Steps to resolve grievances under the RBI Integrated Ombudsman Scheme:\n1. Level 1 - Branch & Internal Grievance: First submit a written complaint to the branch manager or bank's online grievance portal. Get an acknowledgment number.\n2. Level 2 - Bank Principal Nodal Officer: If no response in 30 days or if rejected, escalate to the bank's Principal Nodal Officer (contact on bank website).\n3. Level 3 - RBI Ombudsman: If unresolved after 30 days, file an online complaint at the RBI Complaint Management System (CMS portal: https://cms.rbi.org.in) or call toll-free helpline 14448.\n4. Filing is Free: There is no fee to file an ombudsman complaint. You can seek compensation for mental agony up to Rs. 1 lakh and actual financial losses.",
+    "documents_required": ["Copy of initial complaint to bank", "Bank reply or proof of 30-day lapse", "Bank statement showing disputed transaction"],
+    "source_title": "Reserve Bank of India (RBI) Integrated Ombudsman Scheme",
+    "source_url": "https://cms.rbi.org.in/",
+    "last_verified": "2024-04-20"
+  }
+]

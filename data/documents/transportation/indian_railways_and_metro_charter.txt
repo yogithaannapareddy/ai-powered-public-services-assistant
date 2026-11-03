@@ -1,0 +1,42 @@
+INDIAN RAILWAYS & URBAN PUBLIC TRANSPORT CITIZEN MANUAL
+Source: Ministry of Railways (IRCTC) & Ministry of Housing and Urban Affairs (MoHUA)
+Official URL: https://www.irctc.co.in | https://indianrailways.gov.in | https://mohua.gov.in
+Last Updated: 2024
+
+SECTION 1: INDIAN RAILWAYS PASSENGER RESERVATION SYSTEM
+1. Booking Windows:
+- Advance Reservation Period (ARP): Opens 120 days before journey date (at 08:00 AM IST) excluding the day of journey.
+- Online Booking Timings on IRCTC: 00:20 hrs to 23:45 hrs daily (system maintenance shutdown from 23:45 to 00:20 hrs).
+
+2. Tatkal Scheme Rules:
+- Tatkal reservation is for passengers with short-notice travel plans.
+- AC Classes (1A, 2A, 3A, CC, EC, 3E): Booking opens at 10:00 AM one day prior to the train's departure date from the originating station.
+- Non-AC Classes (Sleeper Class, Second Sitting 2S): Booking opens at 11:00 AM one day prior.
+- Maximum tickets per PNR: Maximum 4 passengers per PNR.
+- Refunds: No refund of fare is granted on cancellation of confirmed Tatkal tickets (except in case of train cancellation or train running late by more than 3 hours).
+- Tatkal Charges: Levied as a percentage of fare (10% to 30% depending on class, subject to minimum and maximum limits).
+
+3. Authorized Identity Proofs for Train Travel:
+Passengers must carry at least one original valid identity card:
+- Voter Photo Identity Card
+- Passport
+- PAN Card
+- Driving License issued by RTO
+- Photo Identity Card issued by Central / State Government
+- Student Identity Card with photograph issued by recognized School/College
+- Nationalized Bank Passbook with photograph
+- Credit Cards with embossed photograph
+- Unique Identification Card "Aadhaar" or downloaded e-Aadhaar or m-Aadhaar
+
+SECTION 2: METRO RAIL & NATIONAL COMMON MOBILITY CARD (NCMC)
+1. National Common Mobility Card (One Nation One Card):
+- Developed under the guidelines of MoHUA, NCMC is an open-loop smart payment card powered by RuPay.
+- Can be used seamlessly across metro rail systems (Delhi Metro, Hyderabad, Mumbai, Bangalore, Chennai), city buses, suburban railways, toll plazas, parking, and retail shopping.
+- Contactless chip allows tapping at automatic fare collection (AFC) gates in under 0.2 seconds.
+- Available at participating bank branches or directly at metro station ticket counters.
+
+2. State Road Transport Bus Passes:
+- Concessional Student Bus Pass: Provides up to 50% to 100% concession for school and university students between home and institution.
+- Documentation: Requires bonafide certificate from educational institution, recent stamp size photographs, fee receipt, and residential proof.
+- Senior Citizen Concession: 50% discount on fare in regular state corporation buses for citizens aged 60 and above with valid age proof.
+- Digital Ticketing: Commuters can generate digital QR bus passes and tickets via official state transport corporation mobile apps or WhatsApp booking numbers.

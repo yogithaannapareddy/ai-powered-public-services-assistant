@@ -1,0 +1,57 @@
+[
+  {
+    "id": "po_001",
+    "category": "Post Office Services",
+    "service": "Speed Post",
+    "question": "How do I send a parcel or letter via Speed Post in India?",
+    "answer": "To send a parcel or urgent document via Speed Post:\n1. Pack your item securely in an envelope or carton box.\n2. Write the sender's full address with PIN code and mobile number on the top-left or back.\n3. Write the recipient's full address, state, and 6-digit PIN code clearly in the center or front.\n4. Visit your nearest Post Office during counter working hours (usually 9:00 AM to 3:00 PM).\n5. Hand over the parcel at the Speed Post counter. The postal assistant weighs the parcel.\n6. Pay the postal charges based on weight and distance. You will receive a booking receipt.\n7. The receipt contains a 13-character tracking number (e.g., ED123456789IN).\n8. Track delivery anytime on www.indiapost.gov.in or via India Post SMS service.",
+    "documents_required": ["Valid Photo ID of sender (if parcel exceeds 2 kg or for value-payable/insured items)"],
+    "source_title": "India Post Speed Post Guidelines & Citizen Charter",
+    "source_url": "https://www.indiapost.gov.in/MBE/Pages/Content/Speed-Post.aspx",
+    "last_verified": "2024-05-01"
+  },
+  {
+    "id": "po_002",
+    "category": "Post Office Services",
+    "service": "Parcel Booking",
+    "question": "I want to send a parcel to another state. What should I do?",
+    "answer": "To send an inter-state parcel through India Post:\n1. Choose your service: Standard Registered Parcel (economical, up to 20 kg) or Speed Post Parcel (faster, time-sensitive).\n2. Packaging: Wrap items tightly. Avoid prohibited items (liquids, flammables, batteries, cash). For fragile goods, use bubble wrap.\n3. Labeling: Mention sender and addressee complete address, contact number, and PIN codes legibly.\n4. At the Post Office: Present the parcel at the parcel/booking counter.\n5. Customs/Declaration: For interstate commercial parcels, attach invoice/e-way bill if required under GST. For personal used goods, sign the standard declaration form at the counter.\n6. Weighing & Payment: Pay postage fees calculated on actual or volumetric weight.\n7. Keep your booking receipt safely for SMS and online tracking.",
+    "documents_required": ["Sender ID proof (Aadhaar / Voter ID / Driving License)", "GST invoice / Declaration form for commercial goods"],
+    "source_title": "India Post Domestic Parcel Booking Rules",
+    "source_url": "https://www.indiapost.gov.in/VAS/Pages/Content/Parcel.aspx",
+    "last_verified": "2024-05-01"
+  },
+  {
+    "id": "po_003",
+    "category": "Post Office Services",
+    "service": "Post Office Savings Account (POSA)",
+    "question": "How do I open a Post Office Savings Account?",
+    "answer": "Steps to open a Post Office Savings Account (POSA):\n1. Eligibility: Any Indian resident individual can open an account (single or joint with up to 3 adults). Minors aged 10+ can operate in their own name.\n2. Minimum Deposit: Rs. 500 initial deposit (cash or cheque). Minimum balance of Rs. 500 must be maintained.\n3. Form: Obtain Form 1 (Account Opening Form) from the post office or download from indiapost.gov.in.\n4. Attach KYC: Submit copy of Aadhaar card and PAN card (or Form 60 if PAN is not available) with 2 passport-size photographs.\n5. Submit: Submit the filled form, deposit slip, and documents at your nearest Post Office branch.\n6. Passbook: You will be issued an account passbook and can opt for ATM/Debit card, cheque book, and internet/mobile banking facility.",
+    "documents_required": ["Aadhaar Card", "PAN Card (or Form 60)", "2 Recent Passport Size Photographs", "Address Proof (if Aadhaar address is different)"],
+    "source_title": "Department of Posts National Savings Schemes Handbook",
+    "source_url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+    "last_verified": "2024-04-15"
+  },
+  {
+    "id": "po_004",
+    "category": "Post Office Services",
+    "service": "India Post Payments Bank (IPPB)",
+    "question": "What is India Post Payments Bank (IPPB) and how do I open a zero-balance account at my doorstep?",
+    "answer": "IPPB brings paperless, biometric digital banking directly to your home via Gramin Dak Sevaks (GDS):\n1. What is IPPB: A government payments bank under the Department of Posts offering savings accounts, bill payments, remittance, and direct benefit transfer (DBT) subsidies.\n2. Doorstep Account Opening: Contact your local postman/Gramin Dak Sevak or book a visit on the IPPB Mobile App or by calling helpline 155299.\n3. Requirement: Only Aadhaar number and PAN number are required.\n4. Process: The postal agent uses a biometric micro-ATM device to verify your fingerprint/iris. The account is opened instantly within 5 minutes.\n5. Zero Balance: Regular IPPB savings accounts do not require a mandatory minimum balance.\n6. Features: Virtual debit card, QR-card banking, UPI compatibility via IPPB Mobile Banking app.",
+    "documents_required": ["Aadhaar Number (biometric authentication)", "PAN Card or Form 60", "Registered Mobile Number"],
+    "source_title": "India Post Payments Bank (IPPB) Citizen Services",
+    "source_url": "https://www.ippbonline.com/web/ippb/savings-account",
+    "last_verified": "2024-05-10"
+  },
+  {
+    "id": "po_005",
+    "category": "Post Office Services",
+    "service": "Postal Tracking & Grievance Redressal",
+    "question": "How do I track my speed post article or lodge a complaint for a delayed parcel?",
+    "answer": "To track or complain about postal articles:\n1. Online Tracking: Visit https://www.indiapost.gov.in. Enter your 13-character tracking number (e.g. EK123456789IN) and security captcha to see real-time transit status.\n2. SMS Tracking: Send SMS 'POST TRACK <13-digit Consignment ID>' to 166 or 51969 from your mobile.\n3. Register Complaint Online: Visit the India Post Grievance Portal (https://www.indiapost.gov.in/VAS/Pages/CustomerSupport/Customer-Support.aspx) or CPGRAMS portal.\n4. Toll-free Helpline: Call national postal enquiry at 1800-266-6868 (9:00 AM to 6:00 PM except Sundays and Gazetted Holidays).\n5. Offline: Visit the Postmaster of your local booking or delivery post office with your booking receipt copy.",
+    "documents_required": ["Speed Post / Parcel Booking Receipt", "Consignment / Article ID Number"],
+    "source_title": "India Post Customer Care & Tracking Portal",
+    "source_url": "https://www.indiapost.gov.in/VAS/Pages/CustomerSupport/Customer-Support.aspx",
+    "last_verified": "2024-05-01"
+  }
+]

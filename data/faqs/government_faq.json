@@ -1,0 +1,35 @@
+[
+  {
+    "id": "gov_001",
+    "category": "Government Services",
+    "service": "Caste, Income & Domicile Certificates",
+    "question": "How do I apply for Caste, Income, or Residence/Domicile certificates?",
+    "answer": "Procedure for state government citizen certificates:\n1. Online Application: Visit your state citizen service portal (e.g. MeeSeva for Telangana/Andhra Pradesh, e-District for UP/Delhi, Nadakacheri for Karnataka, Aaple Sarkar for Maharashtra) or National ServicePlus portal (serviceonline.gov.in).\n2. Register: Create citizen account with Aadhaar verification and mobile OTP.\n3. Select Service: Choose 'Income Certificate', 'Community / Caste Certificate', or 'Residence Certificate'.\n4. Upload Documents: Upload scanned copies of required documents and self-declaration.\n5. Pay Fee: Pay nominal processing fee (usually Rs. 25 - Rs. 50) via UPI or net banking.\n6. Verification: Application is routed to the local Village Revenue Officer (VRO) / Revenue Inspector / Tehsildar.\n7. Download: Once approved (usually 7 to 15 working days), download digitally signed certificate with QR code from the portal or DigiLocker.",
+    "documents_required": ["Aadhaar Card", "Ration Card or Voter ID", "Salary slips / Form 16 / Affidavit for Income Certificate", "School Leaving Certificate / Father's caste certificate for Caste Certificate", "Electricity bill or house tax receipt for Residence/Domicile proof", "Passport size photo"],
+    "source_title": "National Portal of India & ServicePlus Citizen Services Framework",
+    "source_url": "https://serviceonline.gov.in",
+    "last_verified": "2024-05-01"
+  },
+  {
+    "id": "gov_002",
+    "category": "Government Services",
+    "service": "DigiLocker Services",
+    "question": "What is DigiLocker, how do I link documents, and are DigiLocker documents legally valid?",
+    "answer": "DigiLocker is the Government of India's flagship digital document wallet under Digital India:\n1. Legal Validity: Rule 9A of Information Technology (Preservation and Retention of Information by Intermediaries Providing Digital Locker Facilities) Rules, 2016 mandates that issued documents in DigiLocker are treated at par with original physical documents by police, transport departments, universities, and airports.\n2. Account Creation: Visit digilocker.gov.in or download the DigiLocker app. Register using your Aadhaar number and OTP received on your Aadhaar-linked mobile phone. Set a 6-digit security PIN.\n3. Fetching Documents: Go to 'Search Documents'. Search for issuing authority (e.g. UIDAI for Aadhaar, CBSE for marksheets, MoRTH for Driving License & Vehicle RC, Income Tax for PAN Card).\n4. Enter details (Roll Number, Registration Number, or DL Number) and click 'Get Document'.\n5. Direct Verification: Issued documents have a verified green badge and cryptographic digital signature.",
+    "documents_required": ["Aadhaar Number", "Mobile number linked with Aadhaar"],
+    "source_title": "Ministry of Electronics and Information Technology (MeitY) DigiLocker Platform",
+    "source_url": "https://www.digilocker.gov.in/",
+    "last_verified": "2024-04-15"
+  },
+  {
+    "id": "gov_003",
+    "category": "Government Services",
+    "service": "Birth & Death Certificates",
+    "question": "What is the procedure to obtain a Birth or Death Certificate in India?",
+    "answer": "Guidelines under the Registration of Births and Deaths Act:\n1. Timelines: Birth or death must be reported within 21 days of occurrence to the local registrar (Municipal Corporation in cities, Gram Panchayat in villages).\n2. Institutional Events: In hospitals, government or private hospitals automatically report the event to the civil registration portal (CRS - crsorgi.gov.in).\n3. Non-Institutional (Home) Events: The family head must report within 21 days with proof of birth/death, hospital discharge slip or cremation/burial ground certificate.\n4. Application: Apply online on your city municipal portal or state portal (or crsorgi.gov.in). Search using date of event, child's father/mother name, or deceased name.\n5. Late Registration: Events reported after 21 days but within 30 days require late fee. Up to 1 year requires permission from District Magistrate / SDM.\n6. Download: First copy is provided free or at nominal charge; download digitally verified copy from the portal.",
+    "documents_required": ["Hospital Discharge / Birth slip or Doctor certificate", "Parents' Aadhaar cards / IDs", "Marriage certificate of parents (if requested by municipality)", "Cremation / Burial receipt and medical cause of death for Death Certificate"],
+    "source_title": "Civil Registration System (CRS), Office of the Registrar General of India",
+    "source_url": "https://crsorgi.gov.in",
+    "last_verified": "2024-03-30"
+  }
+]

@@ -1,0 +1,38 @@
+GOVERNMENT CITIZEN SERVICES, CERTIFICATES & DIGILOCKER HANDBOOK
+Source: National Portal of India (india.gov.in) & Ministry of Electronics and IT (MeitY)
+Official URL: https://serviceonline.gov.in | https://www.digilocker.gov.in | https://crsorgi.gov.in
+Last Updated: 2024
+
+SECTION 1: STATE CITIZEN CERTIFICATES (SERVICEPLUS & STATE PORTALS)
+1. Income Certificate:
+- Purpose: Required for availing educational scholarships, fee reimbursements, welfare schemes, and reservation benefits (e.g., EWS quota).
+- Issuing Authority: Revenue Department (Tahsildar / Sub-Divisional Magistrate).
+- Validity: Generally valid for one financial year.
+- Required Documents: Salary slip / Form 16 (for salaried persons), income tax return or income affidavit on stamp paper (for self-employed/business), Ration card / Food security card, Aadhaar card, electricity bill, and passport size photograph.
+- Delivery Timeline: Standard 7 to 15 working days through online citizen service portal (MeeSeva, e-District, Nadakacheri, Aaple Sarkar, etc.).
+
+2. Community / Caste Certificate:
+- Purpose: To establish scheduled caste (SC), scheduled tribe (ST), or other backward class (OBC) status for statutory reservations in education and government jobs.
+- Documents Required: Proof of caste (father's or family member's caste certificate), School Leaving Certificate / Transfer Certificate (TC) showing caste, Aadhaar card, residence proof, self-declaration affidavit.
+- Validity: SC/ST certificates are permanent. OBC non-creamy layer (NCL) certificates are valid for 1 financial year.
+
+3. Domicile / Residence Certificate:
+- Purpose: Proof that an individual is a permanent resident of a specific state/union territory for state job quotas and state quota college admissions.
+- Proof of Continuous Residence: School marksheets showing minimum required years of study (usually 3 to 7 years in that state), property tax receipt, electricity bills, or voter ID card.
+
+SECTION 2: DIGILOCKER DIGITAL WALLET PLATFORM
+1. What is DigiLocker?
+- Cloud storage platform providing citizen digital access to authentic documents issued by government departments, educational boards, and statutory bodies.
+- Capacity: 1 GB cloud storage for personal uploaded documents; unlimited storage for digitally issued documents from registered issuers.
+
+2. Legal Status and Validity:
+- Legally recognized under Rule 9A of Information Technology Rules, 2016.
+- Documents in DigiLocker issued by authorities (Aadhaar, Driving License, Vehicle RC, Insurance Policy, Class X & XII marksheets, University degrees) are deemed equivalent to original physical documents.
+- Traffic police and transport authorities cannot insist on physical copies if digital DL/RC is produced via DigiLocker or mParivahan.
+
+3. Step-by-Step Issuance in DigiLocker:
+- Step 1: Sign up using Aadhaar number and verify mobile OTP.
+- Step 2: Set a personal 6-digit security PIN.
+- Step 3: Click 'Search Documents' and search for your institution (e.g., State Board, CBSE, UIDAI, MoRTH).
+- Step 4: Enter specific identifier (Registration number, Roll number, or Chassis/Vehicle number).
+- Step 5: DigiLocker fetches the cryptographically signed electronic certificate and saves it in 'Issued Documents' section.

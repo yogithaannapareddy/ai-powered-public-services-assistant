@@ -1,0 +1,51 @@
+RESERVE BANK OF INDIA - CITIZEN BANKING GUIDELINES
+Source: Reserve Bank of India (RBI) & National Payments Corporation of India (NPCI)
+Official URL: https://www.rbi.org.in | https://cms.rbi.org.in | https://www.npci.org.in
+Last Updated: 2024
+
+SECTION 1: BANK ACCOUNT OPENING AND KYC REQUIREMENTS
+1. Officially Valid Documents (OVDs):
+Under the RBI Master Direction on Know Your Customer (KYC), any of the following 6 documents serve as valid identity and address proof:
+- Passport
+- Driving License
+- Proof of possession of Aadhaar number (Aadhaar card or e-Aadhaar)
+- Voter's Identity Card issued by the Election Commission of India
+- Job card issued by NREGA duly signed by an officer of the State Government
+- Letter issued by the National Population Register containing details of name and address
+Note: Permanent Account Number (PAN) or Form 60 is mandatory for financial verification.
+
+2. Basic Savings Bank Deposit Account (BSBDA) / PMJDY:
+- Zero balance requirement: No minimum balance is mandatory.
+- No charge for cash deposits at bank branch or ATMs.
+- Four free cash withdrawals per month at ATMs or bank counters.
+- Free basic RuPay debit card.
+
+3. Video KYC (V-CIP):
+- Customers can open fully functional bank accounts without visiting a physical branch.
+- Requirements: Original physical PAN card, Aadhaar number (authenticated via OTP), camera and microphone enabled smartphone/laptop, and geo-location within India.
+- Bank official conducts live video interaction, captures photo and live signature on plain paper.
+
+SECTION 2: UPI AND DIGITAL PAYMENT SAFETY PROTOCOLS
+1. What is UPI?
+Unified Payments Interface (UPI) developed by NPCI allows instant 24x7 inter-bank fund transfers via mobile phones using a Virtual Payment Address (VPA / UPI ID) or QR code.
+
+2. Golden Safety Rules for UPI Users:
+- UPI PIN is required ONLY to debit money from your account. You NEVER need to enter your UPI PIN to RECEIVE money or receive refunds.
+- If any caller or message asks you to enter your PIN or scan a QR code to 'claim cashback' or 'receive buyer payment', it is fraudulent.
+- Never install remote screen-sharing software (such as AnyDesk, TeamViewer, RustDesk, QuickSupport) on recommendation of unknown callers.
+- Always check the beneficiary name displayed on screen before approving payment.
+- Daily UPI limit is typically Rs. 1,00,000 for standard transactions (higher for capital markets/educational/hospital payments up to Rs. 5,00,000).
+
+3. Cyber Crime Reporting:
+- If money is fraudulently deducted, immediately dial '1930' (National Cyber Crime Helpline) or register complaint on cybercrime.gov.in within the golden hour (first 2-24 hours).
+- Call your bank's 24x7 customer care number to freeze the account/block debit card/UPI ID.
+
+SECTION 3: GRIEVANCE REDRESSAL & RBI INTEGRATED OMBUDSMAN
+1. Complaint Process:
+- Step 1: Complain to the bank branch or via bank's online customer care portal. The bank must respond within 30 days.
+- Step 2: If the bank rejects the complaint or fails to respond within 30 days, or if the customer is dissatisfied, escalate to the RBI Integrated Ombudsman.
+2. RBI Complaint Management System (CMS):
+- Portal: https://cms.rbi.org.in
+- Email: crpc@rbi.org.in | Postal: Centralised Receipt and Processing Centre, RBI, 4th Floor, Sector 17, Chandigarh - 160017.
+- Toll-free Helpline: 14448.
+- No fee is charged for filing complaints under the Ombudsman Scheme.
